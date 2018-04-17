@@ -1,0 +1,255 @@
+@import "_head"
+
+.head
+	background: url(../img/head_bg.jpg) center center no-repeat
+	&__title
+		position: relative
+		font-family: $extra
+		color: #fff
+		margin-top: 65vh
+		margin-bottom: 70px
+		h1
+			font-size: 50px
+			position: relative
+			z-index: 1
+			span
+				color: $accent
+		&:before
+			content: ''
+			width: 700px
+			height: 120%
+			background-color: $accent
+			position: absolute
+			left: -310px
+			top: -10%
+		&:after
+			content: ''
+			width: 0
+			height: 0
+			border-color: transparent
+			border-style: solid
+			border-width: 91px 0 0 91px
+			border-left-color: $accent
+			position: absolute
+			left: 390px
+			top: -9px
+	&__titlewrap
+		&:before
+			content: ''
+			width: 600px
+			height: 120%
+			background-color: #fff
+			position: absolute
+			left: 390px
+			top: -10%
+
+.main-catalog
+	padding: 70px 0
+
+.slider-main
+
+.slider-item
+	position: relative
+	height: 180px
+	padding: 40px 20px
+	margin-bottom: 30px
+	&:last-child
+		margin-bottom: 0
+	&__bg
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+	&__ttl
+		position: relative
+		font-family: $semi
+		font-size: 18px
+		color: #fff
+
+.slider-item-big
+	position: relative
+	height: 240px
+	padding: 40px 20px
+	margin-bottom: 30px
+	&:last-child
+		margin-bottom: 0
+	&__bg
+		width: 100%
+		height: 100%
+		background-position: bottom center
+		position: absolute
+		top: 0
+		left: 0
+	&__ttl
+		position: absolute
+		bottom: 15px
+		left: 15px
+		font-family: $semi
+		font-size: 18px
+		letter-spacing: 0.1em
+		color: #fff
+
+.find
+	position: relative
+	&__map
+		height: 650px
+	&__wrap
+		position: absolute
+		top: 1%
+		left: 5%
+		width: 25%
+		height: 98%
+		background-color: #fff
+		z-index: 10
+		padding: 30px
+
+.find-form
+	&__ttl
+		font-family: $extra
+		font-size: 24px
+		color: #000
+		margin-bottom: 30px
+	&__select
+		outline: none
+		display: block
+		background-color: transparent
+		min-width: 100%
+		appearance: none
+		font-size: 14px
+		color: #7D7D7D
+		padding: 12px 35px
+		border: 1px solid #000
+		border-radius: 2px
+		margin-bottom: 15px
+	&__line
+		border: none
+		height: 1px
+		background-color: #C4C4C4
+		margin: 30px 0
+
+.rline
+	position: relative
+	&:last-child
+		.find-form__select
+			margin-bottom: 0
+
+.select-ico
+	width: 25px
+	height: 25px
+	background-image: url(../img/list-select.svg)
+	background-size: 25px 25px
+	position: absolute
+	right: 12px
+	top: 15px
+	z-index: -1
+
+.find-result
+	&__item
+		padding-left: 50px
+		background-image: url(../img/placeholder.svg)
+		background-size: 30px 30px
+		background-position: left top
+		background-repeat: no-repeat
+	&__district
+		line-height: 22px
+	&__addr
+		font-size: 14px
+		line-height: 18px
+	&__btn
+		display: block
+		font-size: 14px
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		background-color: $accent
+		padding: 12px 20px
+		border-radius: 2px
+		margin-top: 10px
+		&:hover
+			background-color: darken($accent, 10%)
+			color: darken(#fff, 10%)
+
+.about
+	padding: 70px 0
+	&__ttl
+		position: relative
+		font-family: $bold
+		font-size: 25px
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		padding: 30px 0 120px 0
+		background-color: $accent
+		&:before
+			content: ''
+			width: 0
+			height: 0
+			border-color: transparent
+			border-style: solid
+			border-width: 60px 160px 0 0
+			border-top-color: $accent
+			position: absolute
+			left: 0
+			bottom: -60px
+	&__subttl
+		font-family: $extra
+		color: #fff
+		text-transform: uppercase
+		margin-bottom: 30px
+	&__txt
+		font-size: 14px
+		color: #fff
+		margin-bottom: 30px
+	&__img
+		margin-bottom: 15px
+		&:last-child
+			margin-bottom: 0
+	&__link
+		position: relative
+		font-family: $extra
+		font-size: 14px
+		color: #FFAD45
+		text-transform: uppercase
+		padding-right: 50px
+		i
+			display: block
+			width: 40px
+			height: 18px
+			background-image: url(../img/about_arr.svg)
+			background-size: 40px 18px
+			background-repeat: no-repeat
+			position: absolute
+			top: 0
+			right: 0
+		&:hover
+			color: darken(#FFAD45, 20%)
+
+.promo
+	padding: 70px 0
+	&__ttl
+		position: relative
+		display: table
+		margin: 0 auto
+		padding: 50px 30px
+		background-color: $accent
+		font-family: $bold
+		font-size: 30px
+		text-align: center
+		text-transform: uppercase
+		&:before
+			content: ''
+			z-index: -1
+			width: 102%
+			height: 106%
+			background-color: #C80F0F
+			border-radius: 8px
+			position: absolute
+			top: -8px
+			left: -8px
+
+.map
+	height: 350px
+
+@import "_foot"
+@import "media" // Always at the end

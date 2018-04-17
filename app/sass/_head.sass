@@ -1,0 +1,106 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	overflow-x: hidden
+	background-color: #333333
+	input, textarea
+		outline: none
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+h1, h2, h3, h4
+	font-weight: normal
+
+a:hover
+	text-decoration: none
+	color: initial
+
+.nav-top
+	position: relative
+	background-color: #000
+	z-index: 2
+	&__list
+		list-style-type: none
+		padding-left: 0
+		margin-bottom: 0
+	&__link
+		display: inline-block
+		font-family: $regular
+		font-size: 18px
+		transition: all ease .3s
+		a
+			display: block
+			padding: 30px 20px
+			color: #fff
+		&:hover
+			background-color: darken(#fff, 75%)
+
+.nav-side
+	position: absolute
+	right: 15px
+	bottom: 0
+	&__block
+		position: relative
+		min-width: 190px
+		display: inline-block
+		font-family: $nav
+		font-size: 18px
+		line-height: 25px
+		padding-left: 35px
+		background-size: 25px 25px
+		background-position: left center
+		background-repeat: no-repeat
+		a
+			color: #fff
+			&:hover
+				color: darken(#fff, 5%)
+		&_search
+			background-image: url(../img/search.svg)
+		&_cart
+			background-image: url(../img/cart.svg)
+		&_account
+			background-image: url(../img/user.svg)
+	&:before
+		content: ''
+		width: 120%
+		height: 200%
+		background-color: $accent
+		position: absolute
+		left: -10%
+		top: -50%
+	&:after
+		content: ""
+		width: 0
+		height: 0
+		border-color: transparent
+		border-style: solid
+		border-width: 50px 50px 0 0
+		border-right-color: #ff311d
+		border-left: none
+		position: absolute
+		left: -107px
+		top: -12px
